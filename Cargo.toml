@@ -1,0 +1,13 @@
+[package]
+name = "rust-meme-no5"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.6.20"
+reqwest = "0.11.22"
+scraper = "0.17.1"
+sqlx = { version = "0.7.2", features = ["runtime-tokio-rustls", "sqlite", "macros"] }
+tokio = { version = "1.33.0", features = ["macros", "rt-multi-thread"] }
